@@ -22,7 +22,13 @@
 							<tool command="${GXX}" id="cdt.managedbuild.tool.gnu.cross.c.compiler.899576976" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler">
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.2018249916" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.2147322860" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+<<<<<<< HEAD
 								<option id="gnu.c.compiler.option.include.paths.1518687189" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths"/>
+=======
+								<option id="gnu.c.compiler.option.include.paths.1518687189" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/opt/poky/1.3+snapshot/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include"/>
+								</option>
+>>>>>>> 6fae451db2ecfd4283d60a62c3bbd53dd24ed1ff
 								<option id="gnu.c.compiler.option.misc.other.1256068331" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 `pkg-config --cflags libv4l2 rsb opencv` -Wno-write-strings" valueType="string"/>
 								<option id="gnu.c.compiler.option.include.files.1115844203" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1401896988" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
@@ -30,22 +36,44 @@
 							<tool command="${CXX}" id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.83413047" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
 								<option id="gnu.cpp.compiler.option.optimization.level.1156541898" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.2044437547" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+<<<<<<< HEAD
 								<option id="gnu.cpp.compiler.option.include.paths.618333567" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths"/>
+=======
+								<option id="gnu.cpp.compiler.option.include.paths.618333567" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/opt/poky/1.3+snapshot/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include"/>
+									<listOptionValue builtIn="false" value="/opt/poky/1.3+snapshot/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/include/rsb"/>
+								</option>
+>>>>>>> 6fae451db2ecfd4283d60a62c3bbd53dd24ed1ff
 								<option id="gnu.cpp.compiler.option.other.other.1811231339" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 `pkg-config --cflags libv4l2 rsb opencv` -Wno-write-strings" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1173940928" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.911312256" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
 							<tool command="${CXX}" commandLinePattern="${COMMAND} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} ${FLAGS} " id="cdt.managedbuild.tool.gnu.cross.cpp.linker.1331889629" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
+<<<<<<< HEAD
 								<option id="gnu.cpp.link.option.flags.1838903434" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="`pkg-config --libs libv4l2 rsb opencv | tr &quot; &quot; &quot;\n&quot; | grep -v &quot;opencv_ts&quot; | grep -v &quot;superres&quot; | tr &quot;\n&quot; &quot; &quot;`" valueType="string"/>
 								<option id="gnu.cpp.link.option.paths.167906572" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths"/>
 								<option id="gnu.cpp.link.option.libs.253142712" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+=======
+								<option id="gnu.cpp.link.option.flags.1838903434" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="`pkg-config --libs libv4l2 rsb opencv`" valueType="string"/>
+								<option id="gnu.cpp.link.option.paths.167906572" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="/opt/poky/1.3+snapshot/sysroots/armv7a-vfp-neon-poky-linux-gnueabi/usr/lib"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.253142712" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value=":libboost_system.so"/>
+									<listOptionValue builtIn="false" value=":libboost_thread.so"/>
+								</option>
+>>>>>>> 6fae451db2ecfd4283d60a62c3bbd53dd24ed1ff
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.303180967" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.1686071336" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
+<<<<<<< HEAD
 							<tool command="${AS}" id="cdt.managedbuild.tool.gnu.cross.assembler.507638684" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
+=======
+							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.507638684" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
+>>>>>>> 6fae451db2ecfd4283d60a62c3bbd53dd24ed1ff
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.777995591" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>
